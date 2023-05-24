@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+/* navigation Section start */
+
+.navcontainer {
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(247, 246, 245);
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    
+    
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin-right: 100px;
+    
+    /* padding: 10px; */
+
+}
+
+.navpin {
+    padding: 7px 20px 7px 20px;
+    margin-top: 20px;
+    border: solid #00b4d8;
+    border-radius: 20px;
+    font-family:'Rubik', sans-serif;
+    font-weight: 500;
+    background-color: #00b4d8;
+    box-shadow: 0px 3px 12px 0px #364e53;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+/* Navigation bar stop */
+
+
+/* Carousel Start here */
+
+.slidePicture {
+    margin: 0;
+    /* display: block; */
+}
+
+.phoneBanner {
+    /* border: 3px solid #00b4d8; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/asset.jpg), url(./img/asset1.jpg), url(./img/asset2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slider 10s cubic-bezier(0, 1, 0, 1) infinite;
+    /* animation-name: slider;
+    animation-duration: 3000ms;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+
+    /* margin-top: 40px; */
+
+}
+
+@keyframes slider {
+    0% {
+        background-image: url(./img/asset.jpg);
+    }
+    
+    33% {
+        background-image: url(./img/asset1.jpg);
+    }
+
+    66% {
+        background-image: url(./img/asset2.jpg);
+    }
+}
+
+.gotax {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    border: 1px solid white;
+    box-shadow: 0px 3px 12px 0px #0d272c;
+}
+
+.button1 {
+    animation: button1 10s cubic-bezier(0, 1, 0, 1) infinite;
+}
+
+@keyframes button1 {
+    0% {
+        background-color: rgb(255, 255, 255);
+    }
+    
+    33% {
+        background-color: none;
+    }
+
+    66% {
+        background-color: none;
+    }
+}
+
+.button2 {
+    animation: button2 10s cubic-bezier(0, 1, 0, 1) infinite;
+}
+
+@keyframes button2 {
+    0% {
+        background-color: none;
+    }
+    
+    33% {
+        background-color: rgb(255, 255, 255);
+    }
+
+    66% {
+        background-color: none;
+    }
+}
+
+.button3 {
+    animation: button3 10s cubic-bezier(0, 1, 0, 1) infinite;
+}
+
+@keyframes button3 {
+    0% {
+        background-color: none;
+    }
+    
+    33% {
+        background-color: none;
+    }
+
+    66% {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+/* carousel animation end */
+
+/* What is Taxi Content start */
+
+.whatGoTax {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.imgbanner {
+    /* border: solid rebeccapurple; */
+    width: 35%;
+    
+}
+
+.imgbanner img {
+    width: 450px;
+    height: 300px;
+    padding: 50px 20px 25px 100px;
+}
+
+.imgcontent h2 {
+    font-family:'Rubik', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 32px 30px 0 30px;
+}
+
+
+#bar {
+    /* border: 2px solid darkgreen; */
+    width: 80px;
+    height: 5px;
+    background-color: darkgreen;
+    margin-left: 32px;
+}
+.imgcontent {
+    width: 75%;
+    margin: 10px;
+}
+
+.imgcontent p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin: 20px 32px 0 35px;
+    text-align: justify;
+}
+
+/* What is Taxi Content end */
+
+/* Join The drivers start here */
+
+.joinDriver {
+    /* border: 2px solid green; */
+    background-color: #e3f2fd;
+    width: 100%;
+    height: 40vh;
+    
+}
+
+.joinemoji {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.joinemoji i {
+    color: #accad9;
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    font-size: 4em;
+    padding-top: 40px;
+    text-align: center;
+}
+
+
+.joincontent h3 {
+    font-family: 'Rubik' sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #3a7ea0;
+    text-align: center;
+    margin-top: 10px;  
+}
+
+.joincontent p {
+    font-family: 'Rubik' sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    /* font-style: oblique; */
+    color: #3a7ea0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.signupbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+.signupbtn button {
+    padding: 7px 20px;
+    border: solid #3a7ea0;
+    border-radius: 10px;
+    background-color: #3a7ea0;
+}
+
+.signupbtn a {
+    font-family:'Rubik', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/* Join The drivers end here */
+
+/* delivery needs start here */
+
+.deliverNeed {
+    
+    width: 100%;
+    height: 150vh;
+    
+}
+
+.needheader {
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    color: #00b4d8;
+
+}
+
+
+
+.needservicescontainer {
+    /* border: thick solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 65px 0px 10px 65px;
+    /* background-color: rgb(255, 255, 255); */
+    background-image: url(./img/banner.png);
+    background-repeat: repeat-x;
+    background-size: 30% 150px;
+    background-position: bottom 200px right 50%;
+    position: relative;
+    z-index: 1;
+    
+   
+}
+
+.goblue {
+    background-color: #213ebf;
+    height: 37vh;
+    position: relative;
+    bottom: 200px;
+    width: 100%;
+    /* padding: 5px; */
+    z-index: 0;
+    margin-bottom: 0;
+}
+
+
+.needserviceItems {
+    /* border: solid red; */
+    width: 18%;
+    height: 62vh;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px 3px rgb(223, 214, 214);
+    position: relative;
+    margin-bottom: 0;
+    
+}
+
+img {
+    /* display: block; */
+    width: 180px;
+    height: 180px;
+    /* padding: 5px; */
+    
+}
+
+.moto {
+    
+    text-align: center;
+    padding: 5px;
+}
+
+.awesomeicon {
+    text-align: center;
+    border-radius: 70%;
+    background-color: rgb(255, 255, 255);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    box-shadow: 0px 0px 20px 5px #aab1b8;
+    left: 80px;
+    top: 140px;
+}
+
+.awesomeicon:hover {
+    background-color: #00b4d8;
+    cursor: pointer;
+}
+
+ .awesomeicon i {
+    font-family: Font Awesome\ 5 Free;
+    font-size: 2em;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 20px;
+    left: 18px;
+}
+
+.awesomeicon i:hover {
+    /* background-color: white; */
+    cursor: pointer;
+}
+
+
+.header {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    color: rgb(62, 182, 142);
+    text-align: center;
+    margin: 40px 20px 10px 20px;
+
+}
+
+hr {
+    /* width: 70%; */
+    text-align: center;
+    color: #94a5a8;
+    margin-bottom: 10px;
+
+}
+
+.text {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+    line-height: 1.2em;
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+
+
+.useContainer {
+    width: 100%;
+    min-height: 50vh;
+    /* border: 2px solid red; */
+    background-color: #0252c1;
+    position: relative;
+    bottom: 0;
+    margin-top: 0;
+}
+
+.useHeader {
+    font-family: 'Rubik', sans-serif;
+    font-size: 3.2em;
+    font-weight: 600;
+    color: #fff;
+    padding: 30px 30px 10px;
+}
+
+
+.easeUse {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.usemain {
+    width: 45vw;
+    height: 18vh;
+    background-color: #fff;
+    margin: 30px 30px 40px;
+    border-radius: 10px;
+}
+
+.main1Header, .main2Header, .main3Header {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #00b4d8;
+    text-align: right;
+    padding: 10px;
+}
+
+.main1Para, .main2Para, .main3Para {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em; font-weight: 400; color: rgb(51, 48, 48);
+    margin: 15px;
+    text-align: right;
+
+}
+
+.useeaseimg {
+    width: 50%;
+    /* border: 1px solid red; */
+    background-image: url(./img/hand.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 20px 30px 100px;
+    /* position: absolute; */
+}
+
+
+
+.viewimg {   
+    width: 179px;
+    height: 321px;
+    margin-top: 46px;
+    margin-left: 64px;
+    /* background: #fff; */
+    background-image: url(./img/view1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: viewimg 10s cubic-bezier(0, 1, 0, 1) infinite;
+}
+
+@keyframes viewimg {
+
+0% {
+    background-image: url(./img/view1.jpg);
+  }
+  33% {
+    background-image: url(./img/view2.jpg);
+  }
+  66% {
+    background-image: url(./img/view3.jpg);
+  }
+  100% {
+    background-image: url(./img/view3.jpg);
+  }
+}
+
+/* animation village start here */
+
+.goTaxiMoving {
+    background-color: #dceff8;
+    background-image: url(./img/ilustrasion-scene.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#moving1 {
+    background-image: url(./img/ilustrasion-vehicle.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    animation: moveCar 10s linear 0s infinite normal;
+
+}
+
+.movingCar {
+    height: 110px;
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+@keyframes moveCar {
+0% {
+    background-position: -650px 0;
+}
+
+100% {
+    background-position: 650px 0;
+}
+    
+}
+
+#moving2 {
+    background-image: url(./img/ilustrasi-vehicle-reverse.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    /* background-position: 500px; */
+    animation: moveCarBack 10s linear 0s infinite normal;
+}
+
+@keyframes moveCarBack {
+    0% {
+        background-position: 650px 0;
+    }
+    
+    100% {
+        background-position: -650px 0;
+    }
+        
+    }
+
+
+#moving3 {
+    background-image: url(./img/ilustrasion-vehicle-02.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    animation: moveCarfor 15s linear 0s infinite normal;
+}
+
+@keyframes moveCarfor {
+    0% {
+        background-position: -650px 0;
+    }
+    
+    100% {
+        background-position: 650px 0;
+    }
+        
+    }
+
+.footSection {
+    height: 40vh;
+    width: 100%;
+    background-color: black;
+    padding-top: 20px;
+}
+
+
+.socials i {
+    font-family: Font Awesome\ 5 Free;
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+}
